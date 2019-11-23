@@ -1,2 +1,3 @@
-# sine-app
-single page app base on sine.js
+# sinejs app
+
+single page app made by sine.js
