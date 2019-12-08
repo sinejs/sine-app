@@ -1,0 +1,13 @@
+.bd-example
+{
+    position: relative;
+    padding: 1rem;
+    border: solid #f8f9fa;
+    border-width: .2rem;
+}
+
+.highlight
+{
+    padding: 1rem;
+    background-color: #f8f9fa
+}

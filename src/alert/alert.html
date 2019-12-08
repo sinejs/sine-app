@@ -1,0 +1,20 @@
+<div class="bd-example">
+  <div class="alert alert-primary" role="alert" *n-repeat="alert in alerts" *n-class="alert.css" *n-bind="alert.label">
+  </div>
+</div>
+<figure class="highlight">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputLevel">Level</label>
+      <select class="form-control" *n-model="entity.level">
+        <option :value="level" *n-repeat="level in levels" *n-bind="level" *n-selected="level===entity.level">
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputContent">Alert</label>
+      <input type="text" class="form-control" placeholder="What is alert" *n-model="entity.content">
+    </div>
+    <button class="btn btn-primary" @click="createAlert(entity)">Submit</button>
+  </form>
+</figure>

@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
+    "watch": "webpack --watch --env.NODE_ENV=dev",
     "build": "webpack --env.NODE_ENV=dev --progress --profile --colors",
     "build:dev": "webpack --env.NODE_ENV=dev --progress --profile --colors",
     "build:prod": "webpack --env.NODE_ENV=prod --progress --profile --colors"
@@ -30,5 +30,8 @@
     "terser-webpack-plugin": "^2.2.1",
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "highlight.js": "^9.16.2"
   }
 }

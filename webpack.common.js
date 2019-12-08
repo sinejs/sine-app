@@ -70,7 +70,7 @@ var config = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: process.env.NODE_ENV === 'dev' ? 'sine-ui.css' : 'sine-ui.min.css'
+            filename: process.env.NODE_ENV === 'dev' ? 'sine-app.css' : 'sine-app.min.css'
         })
     ]
 };
